@@ -72,9 +72,7 @@ def init():
 
     glMatrixMode(GL_MODELVIEW)
 
-# -------------------------------------------------
-# ROBOT
-# -------------------------------------------------
+
 def robot():
 
     glPushMatrix()
@@ -83,7 +81,7 @@ def robot():
 
     glTranslatef(-40, 0, -40)
 
-    # ---------------- BASE ----------------
+    # BASE 
 
     glPushMatrix()
 
@@ -93,7 +91,7 @@ def robot():
 
     glPopMatrix()
 
-    # ---------------- BRAZO 1 ----------------
+    # BRAZO 1 
 
     glTranslatef(40, off_b1, 40)
 
@@ -109,7 +107,7 @@ def robot():
 
     glPopMatrix()
 
-    # ---------------- BRAZO 1 HORIZONTAL ----------------
+    # BRAZO 1 HORIZONTAL 
 
     glTranslatef(0, off_b1h, 0)
 
@@ -125,8 +123,7 @@ def robot():
 
     glPopMatrix()
 
-    # ---------------- BRAZO 2 ----------------
-
+    # BRAZO 2 
     glTranslatef(off_b2, 0, 0)
 
     glRotatef(rot_b2, 1, 0, 0)
@@ -141,7 +138,7 @@ def robot():
 
     glPopMatrix()
 
-    # ---------------- GARRA ----------------
+    # GARRA 
 
     glTranslatef(0, off_g, 0)
 
